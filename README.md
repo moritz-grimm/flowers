@@ -1,11 +1,16 @@
 # Flowers
 
-A small single-page birthday greeting: a personalised headline, a bouquet that blooms in, and a confetti burst on load and on button click.
+![Vite](https://img.shields.io/badge/Vite-9135FF.svg?style=for-the-badge&logo=Vite&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-663399.svg?style=for-the-badge&logo=CSS&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white)
 
-Built with [Vite](https://vite.dev/), TypeScript and plain CSS.
-The greeting, the name, the page title and the document language all come from
-environment variables, so the same page can be reused for anyone in any
-language.
+A small single-page greeting: a personalised headline, a bouquet that blooms in, and a confetti burst on load and on button click.
+
+The greeting line, the name, the page title and the document language all come
+from environment variables, so the same page works for a birthday, a
+graduation, a get-well card or anything else. The defaults are birthday-flavoured,
+but can be freely configured via the `.env` file.
 
 ## Requirements
 

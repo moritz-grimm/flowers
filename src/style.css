@@ -25,7 +25,7 @@ body {
 
 }
 
-.birthdayWishes {
+.greetingHeadline {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     font-size: 60px;
@@ -33,7 +33,7 @@ body {
     text-align: center;
 }
 
-.birthdayWishes em {
+.greetingHeadline em {
     color: var(--blush)
 }
 
