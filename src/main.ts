@@ -1,11 +1,15 @@
 import confetti from "canvas-confetti";
 
-const NAME = import.meta.env.VITE_NAME as string;
+type EnvVar = string | undefined;
+
+const greeting = document.getElementById("greeting")!;
 const friendName = document.getElementById("friendName")!;
 const confettiBtn = document.getElementById("confettiBtn") as HTMLButtonElement;
 
-friendName.textContent = NAME;
-document.title = import.meta.env.VITE_TITLE as string;
+greeting.textContent = import.meta.env.VITE_GREETING as EnvVar || "Happy Birthday,";
+friendName.textContent = import.meta.env.VITE_NAME as EnvVar || "Someone";
+document.title = import.meta.env.VITE_TITLE as EnvVar || "Happy Birthday";
+document.documentElement.lang = import.meta.env.VITE_LANG as EnvVar || "en";
 
 async function fireConfetti(): Promise<void> {
     await confetti({
